@@ -14,7 +14,11 @@ const BreakfastList = ({breakfastData}) => {
     const breakfastComponents = breakfastData.map((breakfast) => {
         return(
             <li key={breakfast.id}>
-                <Breakfast name={breakfast.name} description={breakfast.description} prepTime={breakfast.prepTime} rating={breakfast.rating} />
+                <Breakfast 
+                    name={breakfast.name} 
+                    description={breakfast.description} 
+                    prepTime={breakfast.prepTime} 
+                    rating={breakfast.rating} />
             </li>
         )
     });
